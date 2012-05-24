@@ -1,0 +1,13 @@
+{ "name": "hubot-pim",
+  "version": "0.1.0",
+  "description": "Hubot adapter for Pim",
+  "keywords": ["Pim","adapter","hubot"],
+  "homepage": "https://github.com/p-im/hubot-pim",
+  "bugs": {"url": "https://github.com/p-im/hubot-pim/issues"},
+  "author": "Benjie Gillam <benjie@jemjie.com> http://www.benjiegillam.com/",
+  "main": "src/pim.coffee",
+  "repository": {"type": "git", "url": "git://github.com/p-im/hubot-pim.git"},
+  "dependencies": {
+    "pim-client": ">=0.1.0"
+  }
+}
