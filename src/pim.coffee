@@ -69,6 +69,7 @@ class Pim extends Adapter
 
   STATUS: (args, cb) =>
   OTR: (args, cb) =>
+  DATA: (args, cb) =>
 
 exports.use = (robot) ->
   new Pim robot
