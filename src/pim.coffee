@@ -43,6 +43,8 @@ class Pim extends Adapter
     if strings.length > 0
       while message = strings.shift()
         @robot.logger.info "Sending: #{message}"
+        # Transform message
+        message = message.replace /(^|\s)(https?:\/\/[^\s]+\.(?:jpe?g|png|gif))(\s|$)/g, "$1!!$2$3"
         @client?.sendCommand "MSG", {chatId:to.chatId,type:"message",message:message,timestamp:new Date().getTime()}, (args) ->
           if args.errorCode
             @robot.logger.error "Failed to send '#{message}'"
