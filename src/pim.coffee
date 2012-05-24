@@ -50,6 +50,8 @@ class Pim extends Adapter
     return true
 
   YOU: (args, cb) =>
+    for chatId in args.invites ? []
+      @client?.sendCommand "JOIN", {chatId: chatId}, ->
     for chatId in args.chats ? []
       @client?.sendCommand "SUBSCRIBE", {chatId:chatId}, (args2) ->
         if args2.errorCode?
