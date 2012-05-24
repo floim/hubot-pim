@@ -1,5 +1,5 @@
 { "name": "hubot-pim",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "Hubot adapter for Pim",
   "keywords": ["Pim","adapter","hubot"],
   "homepage": "https://github.com/p-im/hubot-pim",
